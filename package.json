@@ -1,0 +1,14 @@
+{
+  "name": "my-little-node-app",
+  "version": "0.0.0",
+  "description": "base node app to get started",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Micah Walter <micah@micahwalter.com> (http://micahwalter.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.4.1"
+  }
+}
