@@ -1,3 +1,5 @@
 exports.render = function(req, res) {
-    res.send("Hello home page");
+    res.render('index', {
+    	title: 'Home'
+    });
 };
