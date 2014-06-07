@@ -10,3 +10,18 @@ uses
 * swig for templates
 * mongoose for talking to mongo
 
+local setup
+---
+
+    $ npm install
+    $ mongod 
+    $ node server
+
+heroku setup
+---
+
+    $ heroku create
+	$ heroku addons:add mongohq
+	$ git push heroku master
+	$ heroku open
+
