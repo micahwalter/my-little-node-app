@@ -1,3 +1,4 @@
+// this uses the posts model to create a new post with some dummy content
 var Post = require('./include/lib_posts');
 
 exports.render = function(req, res){
@@ -5,7 +6,6 @@ exports.render = function(req, res){
 	
 	post.save(function (err) {
 		if (err){
-			console.log(err);
 			res.send(err);
 		}
 		res.send(post);

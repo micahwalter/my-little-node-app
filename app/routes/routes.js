@@ -1,3 +1,5 @@
+// you can put all your routes in here if you like.
+
 module.exports = function(app){
 	
 	// Home route

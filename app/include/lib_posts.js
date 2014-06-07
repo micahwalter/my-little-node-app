@@ -1,3 +1,5 @@
+// This is a sample model for posts
+
 var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
@@ -21,6 +23,7 @@ var PostSchema = new Schema({
 
 // ************************************************************** //
 
+// this looks up a post by ID
 PostSchema.statics.findByID = function findByID(id, cb, err) {
 	this.findOne({ '_id': id }).exec(cb);
 }
