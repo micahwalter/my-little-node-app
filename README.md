@@ -9,6 +9,7 @@ uses
 * express for routes n stuff
 * swig for templates
 * mongoose for talking to mongo
+* bootstrap for fun
 
 local setup
 ---
