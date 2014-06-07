@@ -8,15 +8,7 @@ module.exports = function(app){
 	// Home route
     var index = require('../index');
     router.get('/', index.render);
-	
-	// Post route
-    var post = require('../post');
-    router.get('/post/:id', post.render);
-
-	// Creates a new post
-    var newPost = require('../newPost');
-    router.get('/new', newPost.render);
-	
+		
 	app.use('/', router);
 	
 };

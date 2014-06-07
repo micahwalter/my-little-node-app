@@ -26,6 +26,7 @@ mongoose.connect(configDB.url);
 
 // load the routes
 require('./app/routes/routes')(app);
+require('./app/routes/posts')(app);
 
 // start the server
 var port = Number(process.env.PORT || 5000);
