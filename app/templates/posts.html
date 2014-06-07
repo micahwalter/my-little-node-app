@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <link rel="stylesheet" href="/main.css">
+		
+		<title>Posts</title>
+	</head>
+	<body>
+		{% for post in posts %}
+			<a href="/posts/{{ post.id }}"><h1>{{ post.title }}</h1></a>
+			<p>{{ post.content }}</p>
+		{% endfor %}
+	</body>
+</html>
