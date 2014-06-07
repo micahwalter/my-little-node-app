@@ -14,6 +14,7 @@ exports.render = function(req, res) {
 		
 		Posts.countAll(req.params['page'], function (err, count) {
 			res.render('posts', {
+				title: 'Posts',
 				posts : posts,
 				page : req.params['page'],
 				count: count,
