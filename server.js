@@ -13,7 +13,7 @@ if (!process.env.NODE_ENV){
 	swig.setDefaults({ cache: false });
 }
 
-var configDB = require(__dirname + '/config/database.js');
+var configDB = require('./config/database.js');
 mongoose.connect(configDB.url);
 
 
