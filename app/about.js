@@ -1,0 +1,7 @@
+// just an about page
+
+exports.render = function(req, res) {
+    res.render('about', {
+    	title: 'About'
+    });
+};
