@@ -21,8 +21,7 @@ if (!process.env.NODE_ENV){
 }
 
 // connect to a mongodb via mongoose
-var configDB = require('./config/database.js');
-mongoose.connect(configDB.url);
+mongoose.connect(process.env.MONGOHQ_URL || 'mongodb://localhost/myapp');
 
 // load the routes
 require('./app/routes/routes')(app);
