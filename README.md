@@ -10,6 +10,7 @@ uses
 * swig for templates
 * mongoose for talking to mongo
 * bootstrap for fun
+* passport for authentication
 
 local setup
 ---
